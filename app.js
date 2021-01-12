@@ -1,9 +1,5 @@
-const fs = require('fs');
+const additions = require('./notes');
 
-try {
-    fs.appendFileSync('notes.txt', ' My Name is Andrew');
-    console.log('The "data to append" was appended to file!');
-} catch (err) {
-    /* Handle the error */
-    console.log(err);
-}
+let sum = additions(10, -2);
+
+console.log(sum);
