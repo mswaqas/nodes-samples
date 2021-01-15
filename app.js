@@ -5,6 +5,6 @@ const success = chalk.bold.green;
 const error = chalk.bold.red;
 const warning = chalk.keyword('orange');
 
-let sum = additions(10, -2);
+let sum = additions(15, -2);
 
-console.log(chalk.rgb(123, 45, 67).underline('Total Sum of calculation is ') + success(sum));
+console.log(chalk.inverse.underline('Total Sum of calculation is ') + error(sum));
